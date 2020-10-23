@@ -300,9 +300,6 @@ def get_watched_episodes_for_show_season(shows, watched_show_title, watched_seas
                     logger.info(
                         "[PLEX] Show appears to be movie (no episodes attribute) and trying fallback approach to determine watched state"
                     )
-                    if hasattr(show, "isWatched"):
-                        if show.isWatched:
-                            episodes_watched = 1
                 except Exception:
                     logger.exception(
                         "[PLEX] Failed to get watched state for unknown object (possibly movie)"
