@@ -3,12 +3,12 @@
 
 ![Logo](logo.png)
 
-If you manage your Anime with Plex this will allow you to sync your libraries to [AniList](https://anilist.co)  , recommend using Plex with the [HAMA agent](https://github.com/ZeroQI/Hama.bundle) for best Anime name matches.
+If you manage your Anime with Plex, this script will allow you to sync your libraries to [AniList](https://anilist.co) , it is recommended to use [HAMA agent](https://github.com/ZeroQI/Hama.bundle) for the best exeperience with matching anime names.
 
-Unwatched Anime in Plex will not be synced so only those that have at least one watched episode, updates to AniList are only send with changes so need to worry about messing up watch history.
+Unwatched Anime in Plex will not be synced. Anime is only updated with at least one episode watched, updates are only sent when there is a change in number of watched episodes, this ensures your watched history stays intact.
 
 
-This version is based on my previous project  [PlexMalSync](https://github.com/RickDB/PlexMALSync) which due to MAL closing their API is no longer working, this might change in the future and if it does will resume working on that again as as well.
+This version is based on my previous project  [PlexMalSync](https://github.com/RickDB/PlexMALSync) which due to MAL closing their API is no longer working, this might change in the future and if it does I will resume working on the project again.
 
 
 **If you want test it out first without updating your actual AniList entries check out ``Skip list updating for testing `` from the ``Optional features`` section of this readme**
