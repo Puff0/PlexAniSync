@@ -2,6 +2,8 @@
 __pycache__/
 *.pyc
 *.log
+.idea
+venv
 ApplyPEP8\.bat
 settings/custom_mappings.ini
 failed_matches\.txt
@@ -9,3 +11,5 @@ logo\.psd
 settings\.ini
 update_anilist\.bat
 update_anilist_test\.bat
+custom_mappings.ini
+settings.ini

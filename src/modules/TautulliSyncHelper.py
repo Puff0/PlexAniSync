@@ -6,7 +6,7 @@ from time import sleep
 
 import coloredlogs
 
-from source import anilist, plexmodule
+from . import anilist, plexmodule
 
 # Logger settings
 logger = logging.getLogger("PlexAniSync")

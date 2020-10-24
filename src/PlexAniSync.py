@@ -6,9 +6,13 @@ import sys
 
 import coloredlogs
 
-from source import anilist, plexmodule
+from modules import anilist, plexmodule
 
 __version__ = "1.2.6"
+
+# Check for logs directory and create if missing
+from pathlib import Path
+Path("../logs").mkdir(parents=True, exist_ok=True)
 
 # Logger settings
 log_filename = "../logs/PlexAniSync.log"
@@ -94,7 +98,7 @@ def read_custom_mappings(mapping_file):
                 logger.error("[MAPPING] Invalid entry found for line: %s" % (line))
 
 
-## Startup section ##
+# Startup section #
 
 
 def start():
@@ -102,7 +106,8 @@ def start():
 
     if ANILIST_SKIP_UPDATE == "true":
         logger.warning(
-            "AniList skip list update enabled in settings, will match but NOT update your list"
+            "AniList skip list update enabled in settings, will "
+            "match but NOT update your list"
         )
 
     if ANILIST_PLEX_EPISODE_COUNT_PRIORITY == "true":
